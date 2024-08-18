@@ -1,66 +1,66 @@
+                         HTML
+            ================================
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My E-Commerce Website</title>
+    <title>Portfolio</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <div class="logo">MyStore</div>
         <nav>
             <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#products">Products</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
-        <div class="search-bar">
-            <input type="text" placeholder="Search...">
-        </div>
-        <div class="user-actions">
-            <a href="#account">Account</a>
-            <a href="#cart">Cart</a>
-        </div>
+        <!-- <h1></h1> -->
     </header>
-    <main>
-        <section class="hero">
-            <img src="images/imageshero-image.jpg.jpg" alt="Hero Image">
-        </section>
-        <section class="featured-products">
-            <h2>Featured Products</h2>
-            <div class="product-list">
-                <div class="product">
-                    <img src="images/imagesproduct1.jpg.jpg" alt="Product 1" style="height:400px;">
-                    <h3>Product 1</h3>
-                    <p>$19.99</p>
-                    <button>Add to Cart</button>
-                </div>
-                <div class="product">
-                    <img src="images/imagesproduct2.jpg.jpg" alt="Product 2" style="height:400px;">
-                    <h3>Product 2</h3>
-                    <p>$29.99</p>
-                    <button>Add to Cart</button>
-                </div>
-                <div class="product">
-                    <img src="images/image3.jpg" alt="Product 3" style="height:400px;">
-                    <h3>Product 3</h3>
-                    <p>$39.99</p>
-                    <button>Add to Cart</button>
-                </div>
+
+    <section id="about">
+        <h3>About Me</h>
+        <p>Welcome to Girish kumar portfolio! I am a web developer with a passion for creating beautiful and functional websites.I am finding best companies to work with efficient manner and for good name.I will give my best contribution to my organisation.</p>
+    </section>
+
+    <section id="portfolio">
+        <h3>My Work</h3>
+        <div class="gallery">
+            <div class="gallery-item">
+                <img src="https://1000logos.net/wp-content/uploads/2021/07/Google-Play-Logo.png" alt="Project 1">
+                <p>In python  pandas i have done EDA projects regarding google play store.</p>
             </div>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2024 MyStore. All rights reserved.</p>
-        <div class="footer-links">
-            <a href="#about">About Us</a>
-            <a href="#faq">FAQ</a>
-            <a href="#contact">Contact</a>
+            <div class="gallery-item">
+                <img src="https://images.jdmagicbox.com/comp/tirupati/k4/9999px877.x877.220112044014.d7k4/catalogue/upvc-windows-and-door-system-tirupati-ho-tirupati-r2xqyki7ja.jpg" alt="Project 2">
+                <p>Created sample website for small company.The website url is kvassociates1.netlify.app</p>
+            </div>
+            <div class="gallery-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6qNEjQjo0kDWTwHVWdOLErlLgLd3f5MINtYi7tKkKL5cKvb7GLAkfQQYHfg&s" alt="Project 3">
+                <p>By using html,css and javascript created quiz application for competative Exams.The url link for this website is sivabhargav.netlify.app</p>
+            </div>
         </div>
+    </section>
+
+    <section id="contact">
+        <h3>Contact Me</h3>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <footer>
+        <p align="right">&copy; 2024 My Portfolio. All rights reserved.</p>
     </footer>
 </body>
-</html>
-
 </html>
