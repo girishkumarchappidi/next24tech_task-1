@@ -1,86 +1,100 @@
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    line-height: 1.4;
 }
-
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    background-color: #333;
-    color: white;
+    background:#E67E22 ;
+    text-align: right;
 }
-
-header .logo {
-    font-size: 24px;
-}
-
 header nav ul {
     list-style: none;
-    display: flex;
-    gap: 15px;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 10px;
 }
 
 header nav ul li a {
-    color: white;
+    color: #fff;
     text-decoration: none;
 }
 
-header .search-bar input {
-    padding: 5px;
+header h1 {
+    margin: 0;
 }
 
-header .user-actions a {
-    margin-left: 15px;
-    color: white;
-    text-decoration: none;
-}
-
-.hero {
-    text-align: center;
-}
-
-.hero img {
-    width: 100%;
-    height: auto;
-}
-
-.featured-products {
+section {
     padding: 20px;
-    text-align: center;
+    margin: 20px 0;
 }
 
-.featured-products .product-list {
+#about {
+    background:#F0E68C;
+}
+
+#portfolio {
+    background: #fff;
+}
+
+#portfolio .gallery {
     display: flex;
     flex-wrap: wrap;
-    gap: 15px;
-    justify-content: center;
+    gap: 20px;
 }
 
-.featured-products .product {
-    border: 1px solid #ddd;
+#portfolio .gallery-item {
+    flex: 1 1 calc(33.333% - 20px);
+    background: #f4f4f4;
     padding: 10px;
-    width: calc(33.333% - 30px);
     box-sizing: border-box;
 }
 
-.featured-products .product img {
-    width: 100%;
+#portfolio .gallery-item img {
+    max-width: 100%;
     height: auto;
 }
 
-footer {
-    text-align: center;
-    padding: 10px;
-    background-color: #333;
-    color: white;
+#contact {
+    background: #f4f4f4;
 }
 
-.footer-links {
+#contact form {
     display: flex;
-    justify-content: center;
-    gap: 15px;
+    flex-direction: column;
+    max-width: 300px;
+    margin: auto;
+}
+
+#contact form label {
+    margin: 9px 0 4px;
+}
+
+#contact form input,
+#contact form textarea {
+    padding: 8px;
+    font-size: 1em;
+    margin-bottom: 8px;
+}
+
+#contact form button {
+    padding: 8px;
+    background: #28B463 ;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+footer {
+    background: #17A589;
+    color: #fff;
+    text-align: left;
+    padding: 9px 0;
+    /* position: fixed; */
+    bottom: 0;
+    width: 100%;
 }
